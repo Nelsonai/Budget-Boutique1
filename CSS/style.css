@@ -9,14 +9,58 @@
     body{
         overflow-x: hidden;
     }
-    
+    .hero-image{
+        display: none;
+    }
     nav{
         display: flex;
         justify-content: space-around;
         background-color: rgb(205, 201, 201);
 
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+        background-color: #F5F5F5;
         
     }
+    
+    .hero-text-container {
+        text-align: center;
+        padding: 0 2em;
+        z-index: 1;
+        position: relative;
+        
+    }
+    
+    .hero-heading {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    
+    .hero-subheading {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+    
+    .hero-button {
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        background-color: #121111;
+        color: #FFFFFF;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    
+    .hero-button:hover {
+        background-color: #666666;
+    }
+    
+    
     .burger{
         margin-top: 1.2em;
         cursor: pointer;
@@ -48,6 +92,7 @@
     .nav-active{
         transform: translateX(0%);
         transition: all 0.5s ease-in-out;
+        z-index: 1000;
     }
     .navlink{
         text-decoration: none;
@@ -81,6 +126,52 @@
         justify-content: space-around;
         padding: 1em;
     }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 600px;
+        background-color: #F5F5F5;
+        flex-direction: row-reverse;
+    }
+    
+    .hero-text-container {
+        padding: 2em;
+        z-index: 1;
+    }
+    
+    .hero-heading {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    
+    .hero-subheading {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+    
+    .hero-button {
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        background-color: #333333;
+        color: #FFFFFF;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    
+    .hero-button:hover {
+        background-color: #666666;
+    }
+    .hero-image{
+        transform: scale(1.2);
+        margin-right: 2em;
+        
+
+    }
+    
+    
     .logo{
         transform: scale(2.5);
     }
