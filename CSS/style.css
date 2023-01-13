@@ -2,6 +2,7 @@
     font-family: montserrat, sans-serif;
     margin: 0;
     
+    
 }
 
 
@@ -121,6 +122,9 @@
 
 }
 @media(min-width:720px){
+    body{
+        overflow-x: hidden;
+    }
     nav{
         display: flex;
         justify-content: space-around;
@@ -201,54 +205,48 @@
         margin-right: 3em;
         font-weight: 600;
     }
-    .main-content{
-        padding: 1em;
-        background: linear-gradient(to bottom, #F5F5F5, #b8b5b5); /* gradient from white to light gray */
-        padding: 1em 4em;
-    }
-    .header-content{
-        width: 25%;
-        background-color: tomato;
-        padding: 1em;
-        margin-left: -1em;
-        border-radius: 25px;
-        margin-bottom: 4em;
-        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
-    }
-      
-      
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-        grid-gap: 16px; /* gap between columns */
-        padding: 16px; /* padding around the grid */
-        place-items: center;
-        transform: scale(1);
-        margin-left: 10em;
-        margin-top: -1em;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3em;
+        width: 100%;
         
-       
+      }
+      .line{
+        width: 200%;
+        height: 2px;
+        background-color: #333;
+        margin-left: -5em;
+        margin-top: 2em;
 
       }
-      .content p{
-        font-size: 2em;
+      
+      .item {
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        transform: scale(0.8);
+        width: 80%;
+        margin: 0 auto;
+
+      }
+      
+      .item img {
+        width: 25%;
+        margin-bottom: 1em;
+        
+        
+      }
+      .item p{
+        font-size: 1.2em;
         font-weight: bold;
-        
-      }
-      .contents{
-        margin-bottom: 14em;
       }
       
-      .active{
-        animation: move 2s ease-in-out;
-      }
-      
-      /* Define styles for the grid items */
-      .kids {
-        padding: 0px; /* padding inside each grid item */
-        
-        
-      }
+    .main-content{
+        padding: 1em;
+        padding: 1em 4em;
+    }
+    
       @keyframes move {
         0% {
           transform: translateX(-100%);
