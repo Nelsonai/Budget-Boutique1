@@ -133,6 +133,7 @@
         min-height: 600px;
         background-color: #F5F5F5;
         flex-direction: row-reverse;
+        border-bottom: 2px solid #333;
     }
     
     .hero-text-container {
@@ -156,7 +157,18 @@
         padding: 0.5em 1.5em;
         background-color: #333333;
         color: #FFFFFF;
-        border-radius: 5px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .hero-button2 {
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        background-color: #33333300;
+        color: #070707;
+        border-radius: 25px;
+        border-color: #070707;
+        border: solid;
         text-decoration: none;
         font-size: 1.2em;
     }
@@ -186,7 +198,76 @@
     .navlink{
         text-decoration: none;
         color: black;
-        margin-right: 1em;
+        margin-right: 3em;
         font-weight: 600;
     }
+    .main-content{
+        padding: 1em;
+        background: linear-gradient(to bottom, #F5F5F5, #b8b5b5); /* gradient from white to light gray */
+        padding: 1em 4em;
+    }
+    .header-content{
+        width: 25%;
+        background-color: tomato;
+        padding: 1em;
+        margin-left: -1em;
+        border-radius: 25px;
+        margin-bottom: 4em;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+      
+      
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+        grid-gap: 16px; /* gap between columns */
+        padding: 16px; /* padding around the grid */
+        place-items: center;
+        transform: scale(1);
+        margin-left: 10em;
+        margin-top: -1em;
+        
+       
+
+      }
+      .content p{
+        font-size: 2em;
+        font-weight: bold;
+        
+      }
+      .contents{
+        margin-bottom: 14em;
+      }
+      
+      .active{
+        animation: move 2s ease-in-out;
+      }
+      
+      /* Define styles for the grid items */
+      .kids {
+        padding: 0px; /* padding inside each grid item */
+        
+        
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(-100%);
+        }
+        20% {
+          transform: translateX(20%);
+        }
+        40% {
+          transform: translateX(-10%);
+        }
+        60% {
+          transform: translateX(5%);
+        }
+        80% {
+          transform: translateX(-2%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      
 }
