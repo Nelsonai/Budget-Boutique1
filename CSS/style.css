@@ -36,6 +36,8 @@
         
     }
     
+      
+    
     .hero-heading {
         font-size: 3em;
         font-weight: bold;
@@ -128,7 +130,15 @@
     nav{
         display: flex;
         justify-content: space-around;
-        padding: 1em;
+        padding-top: 1em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: white;
+        
+        
     }
     .hero {
         display: flex;
@@ -208,7 +218,7 @@
     .container {
         display: flex;
         flex-wrap: wrap;
-        padding: 3em;
+        padding: 0;
         width: 100%;
         
       }
@@ -225,7 +235,7 @@
         flex: 1;
         align-items: center;
         text-align: center;
-        transform: scale(0.8);
+        transform: scale(0.6);
         width: 80%;
         margin: 0 auto;
 
@@ -238,14 +248,56 @@
         
       }
       .item p{
-        font-size: 1.2em;
+        font-size: 1.6em;
         font-weight: bold;
       }
+      .gender{
+        background: linear-gradient(to bottom, #F2A449, white);
+        
+        display: grid; /* enable grid layout */
+        grid-template-columns: repeat(3, 1fr); /* create 3 equal-width columns */
+        grid-gap: 10px; /* add some gap between items */
+        place-items: center;
+        padding: 2em;
+        
+      }
+      .genders{
+            
+            
+            text-align: center;
+            transform: scale(0.8);
+            
+            width: 160%;
+      }
+      .woman{
+        transform: scale(0.9);
+
+      }
+      .genders img {
+        width: 25%;
+        
+        border-radius: 25px;
+        transition: all 1s ease-in-out;
+        
+      }
+      .genders img:hover{
+        width: 30%;
+
+      }
+      .genders a{
+        font-size: 1.4em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #121111;
+        
+      }
+       .genders a:hover{
+        border-bottom: 4px solid red;
+      }
       
-    .main-content{
-        padding: 1em;
-        padding: 1em 4em;
-    }
+      
+      
+    
     
       @keyframes move {
         0% {
