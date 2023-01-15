@@ -143,11 +143,15 @@
         }
         .genders img {
         width: 50%;
+        box-shadow: 5px 5px 20px 0px #333; 
         }
         .genders a{
           color: #121111;
           text-decoration: none;
           font-weight: bold;
+        }
+        .genders a:hover{
+          color: rgb(249, 42, 42);
         }
         .main-content p {
           font-size: 1.2em;
