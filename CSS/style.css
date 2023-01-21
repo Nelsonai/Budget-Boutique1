@@ -401,8 +401,17 @@
 
 footer{
   text-align: center;
+  background-color: #F5F5F5;
+  padding: 30px;
+  border-top:10xp solid orange ;
+  border-radius: 15px;
 }
 
 footer a{
   text-decoration: none;
+  
+}
+
+.ftr-h{
+  margin-bottom: 10px;
 }
