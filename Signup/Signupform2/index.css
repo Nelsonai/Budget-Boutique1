@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "poppins";
+}
+
+body{
+    background: url(4382543.jpg);
+    background-size: cover;
+}
+
+header{
+    color: black;
+}
+
+.container{
+    text-align: center;
+    margin-top: 23px;
+    /* animation: move 2s forwards; */
+}
+
+
+.form input[type="text"]{
+    margin-top: 10px;
+    padding: 3px;
+    border: none;
+    margin: 8px;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 340px;
+    height: 40px;
+    background: transparent;
+    background: no-repeat;
+}
+
+.form input[type="password"]{
+    margin-top: 10px;
+    padding: 3px;
+    border: none;
+    margin: 8px;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 340px;
+    height: 40px;
+    background: transparent;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 350px;
+    padding: 8px;
+    margin-top: 8px;
+    height: 40px;
+}
+
+button:hover{
+   cursor: pointer; 
+}
+
+
+
+::placeholder{
+    color: black;
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* HTML Animation */
+@keyframes move{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
